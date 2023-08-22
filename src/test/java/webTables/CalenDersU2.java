@@ -40,7 +40,8 @@ public class CalenDersU2 {
 				String caldt = cols.get(j).getText();
 				if (caldt.equals(date)) {
 					cols.get(j).click();
-					//break;
+					break;
+					
 
 				}
 			}
