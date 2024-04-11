@@ -17,8 +17,10 @@ public class Test1cl5 {
 		driver.get("https://www.google.com/");
 		driver.manage().window().maximize();
 		List<WebElement>links=driver.findElements(By.tagName("img"));
+		//List<WebElement> link=driver.findElements(By.tagName("img"));
+		links.size();
 		System.out.println(links.size());
-//		//links.get(12);
+		//links.get(12);
 //		System.out.println(links.get(12));
 //		String linkname=links.get(12).getText();
 //		System.out.println(linkname);

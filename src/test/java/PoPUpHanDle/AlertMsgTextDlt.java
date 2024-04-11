@@ -21,15 +21,13 @@ public class AlertMsgTextDlt {
 		driver.findElement(By.xpath("//button[@type='submit']")).click();
 
 		driver.findElement(By.linkText("Flight Bookings")).click();
-		driver.findElement(
-				By.xpath("//body[1]/section[2]/div[1]/div[2]/div[1]/div[2]/div[1]/table[1]/tbody[1]/tr[3]/td[10]/a[3]"))
-				.click();
-		String alrtmsg = driver.switchTo().alert().getText();
-
-		if (alrtmsg.contains("Delete")) {
+		driver.findElement(By.xpath("//tbody/tr[4]/td[10]/a[3]")).click();
+		String alrtmes=driver.switchTo().alert().getText();
+		if(alrtmes.contains("HI")) {
 			driver.switchTo().alert().accept();
-		} else {
+		}
+		else {
 			driver.switchTo().alert().dismiss();
 		}
-	}
+			}
 }

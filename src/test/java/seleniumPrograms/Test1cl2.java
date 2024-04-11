@@ -16,6 +16,7 @@ public class Test1cl2{
 			driver.findElement(By.linkText("Admin")).click();
 			Thread.sleep(3000);
 			driver.findElement(By.id("searchSystemUser_userName")).sendKeys("Andrew");
+			Thread.sleep(3000);
 			driver.findElement(By.className("ac_input")).sendKeys("abcd sgdsh");
 			Thread.sleep(3000);
 			driver.findElement(By.id("searchBtn")).click();
@@ -30,10 +31,15 @@ public class Test1cl2{
 			driver.findElement(By.className("arrow"));
 			Thread.sleep(3000);
 			driver.findElement(By.id("menu_admin_viewJobTitleList")).click();
+			Thread.sleep(3000);
 			driver.findElement(By.name("btnAdd")).click();
+			Thread.sleep(3000);
 			driver.findElement(By.id("jobTitle_jobTitle")).sendKeys("HR Department");
+			Thread.sleep(3000);
 			driver.findElement(By.id("jobTitle_jobDescription")).sendKeys("HR Works");
+			Thread.sleep(3000);
 			driver.findElement(By.id("jobTitle[note]")).sendKeys("HR ");
+			Thread.sleep(3000);
 			driver.findElement(By.id("btnSave")).click();
 		//	String exptitle="Andrew";
 		//	if(exptitle.contains(pgTitle)) {

@@ -28,11 +28,10 @@ public class ScrnSht1 {
 
 		driver.findElement(By.xpath("//a[@href='change_password.aspx']//img")).click();
 
-		TakesScreenshot ts = (TakesScreenshot) driver;
-		File srcfile = ts.getScreenshotAs(OutputType.FILE);
-		File desfile = new File("D:\\SccRn\\scrnsht.jpeg");
+		TakesScreenshot ts=(TakesScreenshot) driver;
+		File srcfile=ts.getScreenshotAs(OutputType.FILE);
+		File desfile=new File("D:\\SccRn\\avinash.jpeg");
 		FileUtils.copyFile(srcfile, desfile);
-
 	}
 
 }

@@ -27,7 +27,7 @@ public class CalenDersNxt {
 		String[] temp = flydate.split("-");
 		String date = temp[0];
 		String month = temp[1];
-		String year = temp[2];
+		String year = temp[2];	
 
 		String calyear = driver.findElement(By.className("ui-datepicker-calendar")).getText();
 		while (!calyear.equals(year)) {
@@ -38,7 +38,7 @@ public class CalenDersNxt {
 		while (!calmonth.equalsIgnoreCase(month)) {
 			driver.findElement(By.linkText("Next")).click();
 			calmonth = driver.findElement(By.className("ui-datepicker-month")).getText();
-		}
+		}	
 		WebElement cal=driver.findElement(By.id("ui-datepicker-calendar"));
 		List<WebElement>row,col;
 		row=cal.findElements(By.tagName("tr"));

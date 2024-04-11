@@ -11,15 +11,15 @@ public class ArraylistSTR {
 		carlist.add("Skoda");
 		carlist.add("maruthi");
 		carlist.add("RRR");
-		String cartobechecked="audi";
+		String cartobechecked="Red";
 		try {
 			if(carlist.contains(cartobechecked)) {
 				System.out.println(cartobechecked + "car prese in the list ,Test pass");
 }
 			
-		//	else {
-		//		System.out.println(cartobechecked + " car present not in the list , Test fail");
-		//	}
+			else {
+				System.out.println(cartobechecked + " car present not in the list , Test fail");
+			}
 		}
 
 		catch(Exception e)

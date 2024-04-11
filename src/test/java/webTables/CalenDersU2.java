@@ -31,21 +31,20 @@ public class CalenDersU2 {
 		Select ylist = new Select(driver.findElement(By.className("ui-datepicker-year")));
 		ylist.selectByVisibleText(year);
 
-		WebElement delement = driver.findElement(By.className("ui-datepicker-calendar"));
-		List<WebElement> rows, cols;
-		rows = delement.findElements(By.tagName("tr"));
-		for (int i = 1; i < rows.size(); i++) {
-			cols = rows.get(i).findElements(By.tagName("td"));
-			for (int j = 0; j < cols.size(); j++) {
-				String caldt = cols.get(j).getText();
-				if (caldt.equals(date)) {
-					cols.get(j).click();
-					break;
+//		WebElement delement = driver.findElement(By.className("ui-datepicker-calendar"));
+//		List<WebElement> rows, cols;
+//		rows = delement.findElements(By.tagName("tr"));
+//		for (int i = 1; i < rows.size(); i++) {
+//			cols = rows.get(i).findElements(By.tagName("td"));
+//			for (int j = 0; j < cols.size(); j++) {
+//				String caldt = cols.get(j).getText();
+//				if (caldt.equals(date)) {
+//					cols.get(j).click();
+//					break;
 					
 
 				}
-			}
-		}
+			
+		
 
 	}
-}

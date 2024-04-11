@@ -21,22 +21,15 @@ public class DragNdDrop {
 		driver.get("https://jqueryui.com/");	
 		driver.findElement(By.linkText("Droppable")).click();
 		
-		Actions act=new Actions(driver);
-		
+		Actions act=new Actions(driver)		;
 		driver.switchTo().frame(driver.findElement(By.className("demo-frame")));
-		
-		WebElement srcelement,trgtelement;
+		WebElement srcelement,trtelement;
 		
 		srcelement=driver.findElement(By.id("draggable"));
-		trgtelement=driver.findElement(By.id("droppable"));
+		trtelement=driver.findElement(By.id("droppable"));
 		
-		act.dragAndDrop(srcelement, trgtelement);
+		act.dragAndDrop(srcelement, trtelement);
 		act.build().perform();
-		
-		
-		
-		
-
 	}
 
 }

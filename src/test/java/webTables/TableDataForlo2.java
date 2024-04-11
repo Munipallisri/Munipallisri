@@ -1,4 +1,5 @@
 package webTables;
+
 import java.time.Duration;
 import java.util.List;
 
@@ -18,22 +19,20 @@ public abstract class TableDataForlo2 {
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
 
 		driver.get("https://www.railyatri.in/time-table");
-		WebElement tablelist=driver.findElement(By.xpath("//*[@id=\"train_number\"]"));
-		List<WebElement>rows,cols;
-		rows=driver.findElements(By.tagName("tr"));
+		driver.findElement(By.xpath("//*[@id=\"train_number\"]"));
+		List<WebElement> rows, cols;
+		rows = driver.findElements(By.tagName("tr"));
 		System.out.println(rows.size());
-		for(int i=1;i<rows.size();i++)
-		{
-			cols=rows.get(i).findElements(By.tagName("td"));
-			//System.out.println(cols.size());
-		for(int j=0;j<cols.size();j++)
-		{
-			String data=cols.get(i).getText();
-			System.out.print(data);
+		for (int i = 1; i < rows.size(); i++) {
+			cols = rows.get(i).findElements(By.tagName("td"));
+			// System.out.println(cols.size());
+			for (int j = 0; j < cols.size(); j++) {
+				String data = cols.get(i).getText();
+				System.out.print(data);
+			}
+			System.out.println();
 		}
-		System.out.println();
-		}
-		
+
 	}
 
 }

@@ -38,7 +38,7 @@ public class TableDataChq {
 		WebElement emptable = driver.findElement(By.tagName("resultTable"));
 		List<WebElement> rows, cols;
 		rows = emptable.findElements(By.tagName("tr"));
-		for (int i = 0; i < rows.size(); i++) {
+		for (int i = 1; i < rows.size(); i++) {
 			cols = rows.get(i).findElements(By.tagName("td"));
 			if (cols.get(1).getText().equals(empno)) {
 				System.out.println("New Emp Reg --Test Pass");

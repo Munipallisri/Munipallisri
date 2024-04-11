@@ -24,7 +24,10 @@ public class SelectByIndexTrycatch2 {
 		try 
 		{
 			Select category=new Select(yelemenet);
-			category.selectByVisibleText("Babhy");
+			category.selectByVisibleText("Books");
+				System.out.println("category ?'Books' selected.");
+			
+			
 		}
 		catch(Exception e)
 		{

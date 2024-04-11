@@ -18,7 +18,7 @@ public class GmailMultpleWinHandle {
 		String curwindow=driver.getWindowHandle();
 		
 		driver.findElement(By.linkText("Help")).click();
-		String helwindow=driver.getWindowHandle();
+	//	String helwindow=driver.getWindowHandle();
 		
 		driver.findElement(By.linkText("Privacy")).click();
 		

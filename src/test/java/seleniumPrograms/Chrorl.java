@@ -41,7 +41,7 @@ public class Chrorl{
 			Thread.sleep(5000);
 			driver.findElement(By.xpath("//a[@href='https://accounts.google.com/ServiceLogin?hl=en&passive=true&continue=https://www.google.com/&ec=GAZAmgQ']//span"));
 				
-			driver.close();
+		//	driver.close();
 			
 			
 		}

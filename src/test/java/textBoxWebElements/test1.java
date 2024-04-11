@@ -23,11 +23,9 @@ public class test1{
 			Thread.sleep(3000);
 			driver.findElement(By.linkText("PIM")).click();
 			driver.findElement(By.linkText("Add Employee")).click();
-			WebElement gbutton=driver.findElement(By.name("employeeId"));
-			String x=gbutton.getAttribute("value");
+			WebElement butn=driver.findElement(By.name("employeeId"));
+			String x=butn.getAttribute("value");
 			System.out.println(x);
-			
-			
 		}
 	}
 		

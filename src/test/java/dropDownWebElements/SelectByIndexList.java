@@ -18,16 +18,14 @@ public class SelectByIndexList {
 		
 		driver.get("https://www.amazon.in/");
 		//Thread.sleep(3000);
-		WebElement yelemenet=driver.findElement(By.id("searchDropdownBox"));
-		Select category=new Select(yelemenet);
-		List<WebElement>categorylist=category.getOptions();
-		int itemcount=categorylist.size();
-		System.out.println(itemcount);
-		for(WebElement element:categorylist)
-		{
-			String catname=element.getText();
-			System.out.println(catname);
+		WebElement DropList=driver.findElement(By.id("searchDropdownBox"));
+		Select category=new Select(DropList);
+		List<WebElement> categorylist=category.getOptions();
+		int catecount=categorylist.size();
+		System.out.println(catecount);
+		for(WebElement list:categorylist) {
+			String catnames=list.getText();
+			System.out.println(catnames);
 		}
-		
 	}
 }

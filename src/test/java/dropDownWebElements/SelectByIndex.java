@@ -18,11 +18,11 @@ public class SelectByIndex {
 		//Thread.sleep(3000);
 		driver.findElement(By.linkText("Create new account")).click();
 		Select day=new Select(driver.findElement(By.id("day")));
-		day.selectByValue("18");
+		day.selectByIndex(15);
 		Select month=new Select(driver.findElement(By.id("month")));
-		month.selectByVisibleText("Jun");
+		month.selectByVisibleText("May");
 		Select year=new Select(driver.findElement(By.id("year")));
-		year.selectByValue("2022");
+		year.selectByValue("2023");
 		
 	}
 }

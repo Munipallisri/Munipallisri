@@ -22,7 +22,7 @@ public class SelectByIndexList3 {
 		Select category=new Select(yelemenet);
 		List<WebElement>categorylist=category.getOptions();
 		
-		String item_to_be_check="Books";
+		String item_to_be_check="Lou";
 		boolean isitempresent=false;
 		for(int i=0;i<categorylist.size();i++)
 		{

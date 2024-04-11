@@ -23,15 +23,15 @@ public class SelectByIndexList5 {
 		{
 			System.out.println(category.get(i).getText());
 		}
-		for(WebElement element:category)
-		{
-			if(!element.getTagName().isEmpty())
-			{
-				System.out.println(element.getText());
-			}
+		//for(WebElement element:category)
+		//{
+			//if(!element.getTagName().isEmpty())
+			//{
+				//System.out.println(element.getText());
+			//}
 		}
 	}
-}
+
 		
 	
 
